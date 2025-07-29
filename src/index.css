@@ -8,35 +8,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Fresh fruit-inspired color palette */
+    --background: 55 100% 97%;
+    --foreground: 25 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Fresh green */
+    --primary: 125 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 125 65% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Warm orange */
+    --secondary: 25 95% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent: Sunny yellow */
+    --accent: 48 100% 65%;
+    --accent-foreground: 25 20% 15%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 55 30% 95%;
+    --muted-foreground: 25 10% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 55 20% 88%;
+    --input: 55 20% 88%;
+    --ring: 125 65% 45%;
 
-    --radius: 0.5rem;
+    /* Custom fruit colors */
+    --fruit-green: 125 65% 45%;
+    --fruit-orange: 25 95% 60%;
+    --fruit-yellow: 48 100% 65%;
+    --fruit-red: 0 85% 65%;
+    --fruit-purple: 280 60% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--fruit-green)), hsl(var(--fruit-yellow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--fruit-green)) 0%, hsl(var(--fruit-orange)) 50%, hsl(var(--fruit-yellow)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(55 30% 98%) 100%);
+
+    /* Shadows */
+    --shadow-fruit: 0 10px 30px -10px hsl(var(--fruit-green) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(25 20% 15% / 0.1);
+    --shadow-hover: 0 8px 30px -8px hsl(var(--fruit-green) / 0.4);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
